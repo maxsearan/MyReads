@@ -1,0 +1,225 @@
+html, body, .root {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+body {
+  line-height: 1.5;
+}
+body, .app {
+  background: url('https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+/* main page */
+
+h2 {
+  color: #E94057;
+  text-shadow: 2px 2px 6px rgba(101, 33, 160, 1);
+  font-size: 2.5em;
+}
+
+.list-books-title {
+  background: #8A2387;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px 0px;
+  text-align: center;
+
+  /* Header-Shadow */
+
+  -webkit-box-shadow: 0px 0px 23px 0px rgba(0, 255, 234, 0.91);
+  -moz-box-shadow:    0px 0px 23px 0px rgba(0, 255, 234, 0.91);
+  box-shadow:         0px 0px 23px 0px rgba(0, 255, 234, 0.91);
+}
+
+
+.list-books-title h1 {
+  font-weight: 400;
+  margin: 0;
+  color: white;
+}
+
+.list-books-content {
+  padding: 0 0 80px;
+  flex: 1;
+}
+
+
+@media (min-width: 600px) {
+  .bookshelf {
+    padding: 0 20px 40px;
+  }
+}
+
+.bookshelf-title {
+  border-bottom: 1px solid #dedede;
+  padding: 20px;
+}
+.bookshelf-books {
+  text-align: center;
+}
+
+.open-search {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+.open-search a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #E94057;
+  background-image: url('./icons/add.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size: 0;
+}
+
+/* search page */
+
+.search-books-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  
+
+  -webkit-box-shadow: 0px 0px 23px 0px rgba(0, 255, 234, 0.91);
+  -moz-box-shadow:    0px 0px 23px 0px rgba(0, 255, 234, 0.91);
+  box-shadow:         0px 0px 23px 0px rgba(0, 255, 234, 0.91);
+}
+.search-books-input-wrapper {
+  flex: 1;
+  background: #e9e;
+}
+.search-books-bar input {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
+}
+
+.close-search {
+  display: block;
+  top: 20px;
+  left: 15px;
+  width: 50px;
+  height: 53px;
+  background: whitesmoke;
+  background-image: url('./icons/arrow-back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  font-size: 0;
+}
+
+.search-books-results {
+  padding: 80px 10px 20px;
+}
+
+/* books grid */
+
+.books-grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.books-grid li {
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.book {
+  width: 140px;
+}
+.book-title,
+.book-authors {
+  font-size: 0.8em;
+}
+.book-title {
+  margin-top: 10px;
+  color: #E94057;
+}
+.book-authors {
+  color: #999;
+}
+
+.book-top {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.book-shelf-changer {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background:  #F27121;
+  background-image: url('./icons/arrow-drop-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.book-shelf-changer select {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  color:#E94057;
+}
+
+/* book cover */
+
+.book-cover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background: #eee;
+}
+.book-cover-title {
+  padding: 20px 10px 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+
+.book-shelf {
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -6%;
+}
+
+
+.header {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(101, 33, 160, 1);
+}
+
+.header-container {
+  height: 100vh;
+  background-size: cover;
+  background: url('https://images.pexels.com/photos/55825/gold-bear-gummi-bears-bear-yellow-55825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  padding: 50px;
+}
