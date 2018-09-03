@@ -12,18 +12,22 @@ This stylish, reponsive, and user friendly **Book Tracking App** allows users to
 
 ## Resources
 
-The Udacity React courses!
+***The Udacity React courses!***
 
-Udacity Study Jam Sessions! 
+***Udacity Study Jam Sessions!*** 
 
-Thinking in React: 
+***Thinking in React:***
+
 https://reactjs.org/docs/thinking-in-react.html
 
-The Complete React Web App Developer Course:
+***The Complete React Web App Developer Course:***
+
 https://www.udemy.com/the-complete-react-web-app-developer-course/learn/v4/content 
 
-Wood Photo for shelfs: 
+***Wood Photo for shelfs:*** 
+
 https://www.pexels.com/photo/wood-tree-grain-fallen-1765/
 
-BrickWall :
+**BrickWall:**
+
 https://www.pexels.com/photo/white-brick-wall-1092364/
